@@ -5,9 +5,9 @@ from django.urls import path
 
 # Views
 from cride.users.views import (
-    UserLoginAPIView, 
-    UserSignUpAPIView,
-    AccountVerificationAPIView
+    AccountVerificationAPIView,
+    UserLoginAPIView,
+    UserSignUpAPIView
 )
 
 urlpatterns = [

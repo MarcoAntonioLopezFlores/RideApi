@@ -30,7 +30,7 @@ ROOT_URLCONF = 'config.urls'
 # WSGI
 WSGI_APPLICATION = 'config.wsgi.application'
 
-#Users & Authentication
+# Users & Authentication
 AUTH_USER_MODEL = 'users.User'
 
 # Apps
@@ -49,7 +49,7 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'cride.users.apps.UsersAppConfig',
-    'cride.circles.apps.CirclesAppConfig'
+    'cride.circles.apps.CirclesAppConfig',
 ]
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
@@ -141,7 +141,7 @@ EMAIL_BACKEND = env('DJANGO_EMAIL_BACKEND', default='django.core.mail.backends.s
 # Admin
 ADMIN_URL = 'admin/'
 ADMINS = [
-    ("""Marco Lopez""", 'mnmarcolf@gmail.com'),
+    ("""Pablo Trinidad""", 'pablotrinidad@ciencias.unam.mx'),
 ]
 MANAGERS = ADMINS
 

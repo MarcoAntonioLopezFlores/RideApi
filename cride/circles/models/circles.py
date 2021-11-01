@@ -1,4 +1,4 @@
-from typing import Match
+
 from django.db import models
 
 from cride.utils.models import RideModel
@@ -25,6 +25,12 @@ class Circle(RideModel):
     picture = models.ImageField(
         upload_to = 'circles/pictures',
         blank=True
+    )
+
+    members = models.ManyToManyField(
+        'users.User',
+        through='circles.Membership',
+        through_fields=('circle', 'user')
     )
 
 
